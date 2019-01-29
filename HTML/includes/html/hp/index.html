@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--INDEX PAGE FOR ADMIN PANEL -- NOT HOMEPAGE-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LURX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/includes/html/hp/index.css" />
+
+</head>
+<body>
+    <div class="nav"><div class="logo"><a id="logo" href="#">LURX</a></div><form id="logo" action="../includes/signout.php" method="POST"><button class="logout" type="submit" name="submit">Logout</button></form></div>
+
+    <div class="container">
+        <div id="white_space"></div>
+        <div class="product_dashboard">
+            <div class="product_search">
+                <input class="input" id="input" type="text" placeholder="Search" id="searchInput">
+                <button class="searchBtn" id="searchBtn" onblur="search()"><img class="searchBtnImg" src="assets/search-icon.png"></button>
+                <!--<img class="searchBtn" src="assets/search-icon.png">-->
+            </div>
+            <div class="product_count">
+                   
+                        <div class="counter_text">
+                            <div class="count_text" id="counter"></div><div class="count_text">Employees</div>
+                        </div>
+                   
+            </div>
+            <div class="product_sort">
+                <div class="sort_box">Type: 
+                    <select class="sort_select" id="sort_select" onchange="sortBySelect()">
+                            <option disabled selected>Please Select</option>
+                            <option value="1">Full Time</option>
+                            <option value="2">Part Time</option>
+                            <option value="3">Casual</option>
+                    </select> 
+                    <svg class="down_arrow"></svg>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="grid" id="grid">
+        </div>
+
+    </div>
+</body>
+<footer>
+
+</footer>
+</html>

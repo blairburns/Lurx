@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* INDEX PAGE FOR ADMIN PANEL -- NOT HOMEPAGE */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    background-color: #F7F6F3;
+
+}
+
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: #282B2C;
+}
+
+
+.head {
+    margin: auto auto auto auto;
+    width: auto;
+    height: auto;
+    font-size: 72px;
+    color: white;
+    padding-bottom: 75px;
+    text-align: center;
+}
+.subHead {
+    font-size: 18px;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 1001;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    color: white;
+    float: left;
+    height: auto;
+    flex-direction: column;
+    height: auto;
+    margin: auto 0 auto 20px;
+    width: 100%;
+    font-size: 28px;
+    
+}
+
+#logo {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: inherit;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logout{
+    color: white;
+    float: right;
+    flex-direction: column;
+    height: auto;
+    margin: auto 20px auto 0;
+    width: auto;
+    text-align: right;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+}
+
+.logout:hover {
+    color: grey;
+}
+.container {
+    height: auto;
+    position: relative;
+    z-index: 1000;
+    background-color: #F7F6F3;
+    max-width: 1024px;
+    margin: 0 auto 0 auto;
+    width: 100%;
+
+}
+
+#white_space {
+    height: 25px;
+}
+
+
+
+@media only screen and (min-width: 640px) { /*Tablet*/
+    .product_count {width: 15% !important; order: 1;}
+    .product_search {flex: 2 !important; order: 2; padding: 0 0 0 0 !important;}
+    .product_sort {flex: 1 !important; order: 3;}
+    .counter_text {margin-left: 5px !important;}
+    .grid {
+        max-height: 600px;
+        height: 600px !important;
+        overflow: scroll;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) { /*Desktop*/
+    .head { font-size: 100px;}
+    .product_search {order: 2; padding: 0 0 0 0 !important;}
+    .product_count {order: 1; width: 25% !important;}
+    .product_sort {order: 3;}
+    .grid {
+        max-height: 750px;
+        height: 750px !important;
+        overflow: scroll;
+    }
+
+    
+}
+
+.product_dashboard {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product_count {
+    width: 40%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.product_search {
+    width: 100%;
+    height: 50px;
+    min-width: 300px;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5px 0px 5px;
+
+}
+
+.input {
+    flex: 1;
+    border-radius: 0px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.searchBtnImg{
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: all .1s ease-in-out;
+    border: 0;
+}
+
+.searchBtnImg:active {
+    transform: scale(0.8);
+}
+
+.searchBtn {
+    border: none;
+    background-color: #F7F6F3;
+}
+
+.searchBtn:focus {
+    outline: none;
+}
+
+.product_sort {
+    width: 60%;
+    float: right;
+    height: 50px;
+
+}
+
+.counter_text {
+    flex-direction: row;
+    vertical-align: middle;
+    margin-left: 15px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.count_text {
+    width: auto;
+}
+
+#counter {
+    margin-right: 5px;
+}
+
+
+.sort_box {
+    border: 1px solid #7e7d7d;
+    max-width: 200px;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    float: right;
+    margin-right: 10px;
+    padding: 1px;
+    padding-left: 10px;
+    height: 45px;
+}
+
+.sort_box:hover {
+    border-color: #000;
+}
+.sort_select {
+    padding: 8px 20px;
+    border: none;
+    background-color: white;
+    -webkit-appearance: none;
+    cursor: pointer;
+    color: #6e6e6e;
+    padding-right: 0;
+
+}
+.sort_select:focus {
+    outline: none;
+}
+
+.down_arrow {
+    width: 10px;
+    height: 10px;
+    background-image: url('../assets/down-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.grid {
+    margin: 0px;
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration-style: none;
+}
+
+
+.employee_table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    max-height: 100%;
+    overflow: scroll;
+
+}
+
+td{
+    padding: 4px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+th {
+    border-right: #000 solid 1px;
+    border-left: #000 solid 1px;
+    margin-bottom: 10px;
+    background-color: #dddddd;
+    min-width: 100%;
+    table-layout: auto;
+}
+
+tbody:before {
+    line-height:1px;
+    content:"_";
+    color: transparent;
+    display:block;
+}
+
+tbody {
+    text-align: center;
+    width: 100%;
+
+}
+
+.white_space_bottom {
+    height: 25px;
+}
+
+.add_objects_container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.add_product {
+    flex-grow: 1;
+    flex-direction: column;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 10px 0 10px;
+}
+
+.add_employee {
+    flex-grow: 1;
+    flex-direction: column;
+    display: inline-flex;
+    margin: 0 10px 0 10px;
+
+}
+
+.link {
+    display: inline-flex;
+    background-color: #d6d6d6;
+    width: 100%;
+    height: 60px;
+    min-width: 200px;
+    max-width: 300px;
+    align-self: center;
+    margin: auto auto auto auto;
+    border: #282B2C solid 1px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+
+}
+
+.link:hover{
+    background-color: #282B2C;
+    color: #F7F6F3;
+}

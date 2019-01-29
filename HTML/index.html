@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LURX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <Script src="js/productController.js"></Script>
+</head>
+<body>
+    <div class="parallaxBG">
+        <div class="nav"><div class="logo"><a id="logo" href="#">LURX</a></div><button class="login"><a id="logo" href="/login.html">Login</a></button></div>
+        <div class="heading"><div class="head">LURX<div class="subHead">Taking Campers Places</div></div></div>
+    </div>
+    <div class="container">
+        <div id="white_space"></div>
+        <div class="product_dashboard">
+            <div class="product_search">
+                <input class="input" id="input" type="text" placeholder="Search" id="searchInput">
+                <button class="searchBtn" id="searchBtn" onblur="search()"><img class="searchBtnImg" src="assets/search-icon.png"></button>
+                <!--<img class="searchBtn" src="assets/search-icon.png">-->
+            </div>
+            <div class="product_count">
+                   
+                        <div class="counter_text">
+                            <div class="count_text" id="counter"></div><div class="count_text">Products</div>
+                        </div>
+                   
+            </div>
+            <div class="product_sort">
+                <div class="sort_box">Sort By: 
+                    <select class="sort_select" id="sort_select" onchange="sortBySelect()">
+                            <option disabled selected>Please Select</option>
+                            <option value="1">Price (High - Low)</option>
+                            <option value="2">Price (Low - High)</option>
+                            <option value="3">Alphabetically (A-Z)</option>
+                            <option value="4">Alphabetically (Z-A)</option>
+                    </select> 
+                    <svg class="down_arrow"></svg>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="grid" id="grid">
+        </div>
+
+        <div class="LCBcontainer">
+                <button id="loadCardsBtn" class="loadCardsBtn">Load More</button>
+            </div>
+    </div>
+</body>
+<footer>
+
+</footer>
+</html>
